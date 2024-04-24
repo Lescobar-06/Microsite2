@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poster</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"
+        ><div>
+          <img src="img/Siya-logo.png" width="50px" alt="logo" /></div
+      ></a>
+      <div class="box">
+        <a href="page2.html"
+          ><div class="room"><strong>Throne Room</strong></div></a
+        >
+        <a href="page4.html"
+          ><div class="book"><strong>Book Cover</strong></div></a
+        >
+        <a href="page3.html"
+          ><div class="poster"><strong>Poster</strong></div></a
+        >
+      </div>
+    </header>
+    <a href="page4.html"><div id="arrow">&#8249;</div></a>
+    <div class="poster">
+      <img src="img/poster.jpg" width="100%" alt="poster" />
+      <main></main>
+    </div>
+  </body>
+</html>
+<style>
+  body {
+    background-color: rgb(198, 63, 63);
+    margin-left: 8px;
+    width: fit-content;
+  }
+
+  header {
+    display: flex;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+  }
+  main {
+    margin: 0;
+    display: grid;
+  }
+
+  div.poster {
+    position: fixed;
+    margin-top: -160px;
+    margin-left: 650px;
+    width: 520px;
+  }
+
+  .menu {
+    color: rgb(255, 255, 255);
+    width: 1720px;
+    height: 46px;
+    margin-bottom: 0px;
+  }
+
+  .box {
+    position: absolute;
+    margin-left: 1540px;
+    width: 300px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+  }
+
+  .poster {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+
+  div#arrow {
+    color: rgb(255, 255, 255);
+    display: grid;
+    align-content: center;
+    font-size: 7rem;
+    margin-left: 550px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  div#next {
+    color: rgb(255, 255, 255);
+    font-size: 7rem;
+    text-decoration: none;
+    cursor: pointer;
+  }
+</style>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Throneroom</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"
+        ><div>
+          <img src="img/Siya-logo.png" width="60px" alt="logo" /></div
+      ></a>
+    </header>
+    <div class="box">
+      <a href="page2.html"
+        ><div class="room"><strong>Throne Room</strong></div></a
+      >
+      <a href="page4.html"
+        ><div class="book"><strong>Book Cover</strong></div></a
+      >
+      <a href="page3.html"
+        ><div class="poster"><strong>Poster</strong></div></a
+      >
+    </div>
+    <main>
+      <div id="middle">
+        <a href="index.html"><div id="leftarrow">&#8249;</div></a>
+        <a href="page4.html"><div id="rightarrow">&#8250;</div></a>
+      </div>
+    </main>
+  </body>
+</html>
+<style>
+  body {
+    background-image: url(img/room.jpg);
+    background-size: cover;
+    background-repeat: none;
+    background-repeat: no-repeat;
+  }
+  .next {
+    margin-top: auto;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  #top {
+    display: grid;
+    grid-template-columns: 200px 1670px;
+    margin-right: 100px;
+  }
+  .box {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-align: end;
+    position: relative;
+    margin-top: -30px;
+    margin-left: 1440px;
+    width: 300px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+  }
+
+  div#middle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 85vh;
+    width: 80vw;
+  }
+
+  div#leftarrow {
+    color: rgb(198, 63, 63);
+    font-size: 7rem;
+    margin-left: 180px;
+    text-align: left;
+    margin-top: 510px;
+  }
+
+  div#rightarrow {
+    color: rgb(198, 63, 63);
+    font-size: 7rem;
+    margin-left: 180px;
+    text-align: right;
+    margin-top: 510px;
+  }
+</style>

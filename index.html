@@ -3,61 +3,113 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Micro-site</title>
-    <style></style>
+    <title>LandingPage</title>
   </head>
   <body>
-    <div class="container">
-      <div class="column">
-        <img src="images/ahmad-odeh-lVNjROfGm8Q-unsplash.jpg" width="100%" />
-        <p>This is the content of page 1.</p>
-      </div>
-      <div class="column">
-        <img src="images/EgyptArt4.jpg" width="100%" />
-        <p>This is the content of page 2.</p>
-      </div>
-      <div class="column">
-        <div id="book">
-          <div id="spine">
-            <img
-              src="images/max-bender-1YHXFeOYpN0-unsplash.jpg"
-              width="100%"
-            />
-          </div>
-          <div id="front">
-            <img
-              src="images/max-bender-1YHXFeOYpN0-unsplash.jpg"
-              width="100%"
-            />
-          </div>
-          <div id="back">
-            <img
-              src="images/max-bender-1YHXFeOYpN0-unsplash.jpg"
-              width="100%"
-            />
-          </div>
-        </div>
-        <p>This is the content of page 3.</p>
-      </div>
+    <a href="index.html"
+      ><div class="logo">
+        <img src="img/Siya-logo.png" width="50px" alt="logo" /></div
+    ></a>
+    <div class="box">
+      <a href="page2.html"
+        ><div class="room"><strong>Throne Room</strong></div></a
+      >
+      <a href="page4.html"
+        ><div class="book"><strong>Book Cover</strong></div></a
+      >
+      <a href="page3.html"
+        ><div class="poster"><strong>Poster</strong></div></a
+      >
     </div>
-    <button class="button" onclick="nextPage()">Next Page</button>
-    <script>
-      let currentPage = 0;
-
-      function nextPage() {
-        currentPage++;
-        if (currentPage > 3) {
-          currentPage = 1;
-        }
-        const columns = document.querySelectorAll(".column");
-        columns.forEach((column) => {
-          column.style.display = "none";
-        });
-        const currentColumn = document.querySelector(
-          `.container .column:nth-child(${currentPage})`
-        );
-        currentColumn.style.display = "block";
-      }
-    </script>
+    <main id="bottom">
+      <div id="work">
+        <img src="img/khafre.jpg" width="100%" alt="khafre" />
+      </div>
+    </main>
   </body>
 </html>
+<style>
+  body {
+    margin: 0 auto;
+    background-color: rgb(198, 63, 63);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #top {
+    display: grid;
+    grid-template-columns: 200px 1670px;
+  }
+  .logo {
+    width: 1920px;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+    margin-left: 6px;
+    margin-top: 6px;
+  }
+  .box {
+    position: absolute;
+    margin-top: -100px;
+    margin-left: 1440px;
+    height: 100px;
+    width: 300px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+  }
+  .room {
+    width: 100px;
+    height: 100px;
+  }
+  .poster {
+    width: 100px;
+    height: 100px;
+    margin-left: 70px;
+  }
+  .book {
+    width: 100px;
+    height: 100px;
+    margin-left: 0px;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: rgb(182, 11, 11);
+  }
+
+  #bottom {
+    width: 1920px;
+    height: 930px;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+  }
+
+  #work {
+    position: relative;
+    object-fit: fill;
+    right: 0;
+    bottom: 0;
+  }
+
+  video#work {
+    position: absolute;
+    width: 1920px;
+    height: 930px;
+  }
+  .left {
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    margin-top: 365px;
+  }
+  .next {
+    width: 320px;
+    height: 930px;
+  }
+  .png {
+    width: 50px;
+    height: 50px;
+
+    margin-top: 440px;
+    margin-left: 135px;
+  }
+</style>
