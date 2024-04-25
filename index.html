@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LandingPage</title>
+    <title></title>
   </head>
+<<<<<<< HEAD
   <body>
     <a href="index.html"
       ><div class="logo">
@@ -27,6 +28,51 @@
       </div>
     </main>
   </body>
+=======
+  <main>
+    <body>
+        <div class="throne">
+          <img src="images/ahmad-odeh-lVNjROfGm8Q-unsplash.jpg" width="100%" />
+          <p>This is the content of page 1.</p>
+        </div>
+        <div class="poster">
+          <img src="images/EgyptArt4.jpg" width="100%" />
+          <p>This is the content of page 2.</p>
+        </div>
+        <div class="book">
+            <div class="leftbook" style="background-color: burlywood;">
+              <img src="images/max-bender-1YHXFeOYpN0-unsplash.jpg" />
+            </div>
+            <div class="middlebook" style="background-color: burlywood;">
+              <img src="images/max-bender-1YHXFeOYpN0-unsplash.jpg" />
+            </div>
+            <div class="rightbook">
+              <img src="images/max-bender-1YHXFeOYpN0-unsplash.jpg" style="background-color: burlywood;"/>
+            </div>
+          </div>
+          <p>This is the content of page 3.</p>
+      </div>
+      <button class="button" onclick="nextPage()">Next Page</button>
+      <script>
+        let currentPage = 0;
+        function nextPage() {
+          currentPage++;
+          if (currentPage > 3) {
+            currentPage = 1;
+          }
+          const columns = document.querySelectorAll(".column");
+          columns.forEach((column) => {
+            column.style.display = "none";
+          });
+          const currentColumn = document.querySelector(
+            `.container .column:nth-child(${currentPage})`
+          );
+          currentColumn.style.display = "grid";
+        }
+      </script>
+    </body>
+  </main>
+>>>>>>> e050156230be3385bc1f4857f66b1412958849e4
 </html>
 <style>
   body {
