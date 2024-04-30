@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Code+Pro&display=swap");
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 ;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+  }
+  .heading{
+    justify-content: space-between;
+    height: 8vh;
+    width: 100%;
+  }
+ 
+.logo img {
+    width: 50px;
+    margin-left: 10px;
+
+   
+  }
+  .heading .box {
+    padding-top: 1rem;
+    font-size: large;
+    margin-top: 0px;
+    width: 50%;
+    display: flex;
+   justify-content: right;
+   padding-right:3rem ;
+   gap: 3rem;
+  }
+
+
+  #bottom {
+    width: 100vw;
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+  }
+
+  #work {
+    background-size: cover;
+    background-position: center;
+    width: 80vh;
+    height: 100%;
+
+  }
+
+  .left {
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    margin-top: 365px;
+  }
+  .next {
+    width: 320px;
+    height: 930px;
+  }
+  body .heading {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+  body .heading img {
+      margin-top: 10px;
+      margin-left: 10px;
+  }
+  #workvid {
+    width: 100%;
+    height: 100%;
+  }
+
+  #workvid img{
+    width: 100;
+    height: 100%;
+  }

@@ -4,118 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing-Page</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <a href="index.html"
-      ><div class="logo">
-        <img
-          src="img/logokafre.png"
-          width="50px"
-          alt="logo"
-        /></a>
-        <div class="box">
-          <a href="page2.html"
-            ><div class="room"><strong>Throne Room</strong></div></a
-          >
-          <a href="page4.html"
-            ><div class="book"><strong>Book Cover</strong></div></a
-          >
-          <a href="page3.html"
-            ><div class="poster"><strong>Poster</strong></div></a
-          >
-        </div>
+
+    <div class="heading">
+      <div class="logo">
+        <a href="index.html">
+            <img src="img/logokafre.png" alt="logo">
+          </a>
       </div>
+
+          <div class="box">
+            <a href="page2.html"> 
+              <div ><strong>Throne Room</strong></div></a>
+            <a href="page4.html"
+              ><div ><strong>Book Cover</strong></div></a>
+            <a href="page3.html"
+              ><div ><strong>Poster</strong></div></a>
+          </div>
+    </div>
+  
     <main id="bottom">
       <div id="work">
+        <video autoplay muted loop id="workvid">
+          <source  src="img/y2mate.com - Khafres Diorite Statue_1080p.mp4"
+          type="video/mp4" height: 90%; background-position: center;
+          background-size: cover;> 
+        </div>
+
+        <div class="right">
         <a href="page2.html"><div id="arrow">&#8249;</div></a>
       </div>
     </main>
+
+
   </body>
 </html>
 <style>
-  @import url("https://fonts.googleapis.com/css2?family=Code+Pro&display=swap");
+ 
 
-  body {
-    margin: 0 auto;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-      sans-serif;
-  }
-  #top {
-    display: grid;
-    grid-template-columns: 200px 1670px;
-    position: fixed;
-  }
-  .logo {
-    background-position: center;
-    background-size: cover;
-    margin-left: 6px;
-    margin-top: 0px;
-  }
-  .box {
-    font-size: large;
-    position: sticky;
-    margin-top: -40px;
-    margin-left: 1440px;
-    width: 300px;
-    display: grid;
-    grid-template-columns: 150px 150px 150px;
-  }
-  .room {
-    width: 100px;
-    height: 100px;
-  }
-  .poster {
-    width: 100px;
-    height: 100px;
-    margin-left: 0px;
-  }
-  .book {
-    width: 100px;
-    height: 100px;
-    margin-left: 0px;
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  div#leftarrow {
-    color: rgb(255, 255, 255);
-    font-size: 7rem;
-    margin-left: 180px;
-    text-align: left;
-    margin-top: 450px;
-  }
-  #bottom {
-    width: 1920px;
-    height: 930px;
-    background-position: center;
-    background-size: cover;
-    display: grid;
-  }
-
-  #work {
-    font-size: large;
-    position: relative;
-    object-fit: fill;
-    background-image: url(img/khafre.jpg);
-    background-position: center;
-    background-size: cover;
-  }
-
-  .left {
-    position: absolute;
-    width: 500px;
-    height: 200px;
-    margin-top: 365px;
-  }
-  .next {
-    width: 320px;
-    height: 930px;
-  }
-
-  img {
-      margin-top: 20px;
-  }
+  
 </style>
