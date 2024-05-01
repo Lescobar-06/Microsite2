@@ -87,7 +87,7 @@ body {
   }
 
   #workvid img{
-    background-size: cover;
+    background-size:cover;
     background-position: center;
     position: relative;
     width: 100%;
@@ -108,5 +108,8 @@ body {
   #arrow {
     position: absolute;
     font-size: 80px;
+    margin-left: 1800px;
+    color: rgb(215 19 3);
+    font: 9rem sans-serif;
   }
 

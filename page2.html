@@ -7,7 +7,7 @@
   </head>
   <body>
     <header>
-      <a href="index.html"
+      <a href="page1.html"
         ><div>
           <img
             id="logo"
@@ -30,21 +30,23 @@
     </div>
     <main>
       <div id="middle">
-        <a href="index.html"><div id="leftarrow">&#8249;</div></a>
+        <a href="page1.html"><div id="leftarrow">&#8249;</div></a>
         <a href="page4.html"><div id="rightarrow">&#8250;</div></a>
       </div>
     </main>
   </body>
 </html>
 <style>
+  @import url("https://fonts.googleapis.com/css2?family=Code+Pro&display=swap");
   body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
       Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
       sans-serif;
-    background-image: url(img/room.jpg);
+    background-image: url(img/Throneroom-Sfiso.jpg);
     background-size: cover;
-    background-repeat: none;
+    background-position: center;
     background-repeat: no-repeat;
+    color: white;
   }
   .next {
     margin-top: auto;
@@ -52,16 +54,20 @@
 
   a {
     text-decoration: none;
-    width: max-content;
-    margin-top: 0px;
+    color: white;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    gap: 2rem;
   }
 
   img {
-    margin-top: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
   }
   .room {
     margin-left: -30px;
   }
+
   #top {
     display: grid;
     grid-template-columns: 200px 1670px;
@@ -70,14 +76,15 @@
   .box {
     color: white;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: end;
     position: relative;
-    margin-top: -30px;
-    margin-left: 1440px;
+    margin-top: -60px;
+    margin-left: 2155px;
     width: 300px;
     display: grid;
     grid-template-columns: 100px 100px 100px;
+    gap: 2rem;
   }
 
   div#middle {
@@ -89,17 +96,16 @@
 
   div#leftarrow {
     color: rgb(255, 255, 255);
-    font-size: 7rem;
-    margin-left: 180px;
+    font-size: 9rem;
+    margin-left: 580px;
     text-align: left;
-    margin-top: 450px;
+    margin-top: 850px;
   }
 
   div#rightarrow {
     color: rgb(255, 255, 255);
-    font-size: 7rem;
-    margin-left: 650px;
-    text-align: right;
-    margin-top: 450px;
+    font-size: 9rem;
+    margin-left: 500px;
+    margin-top: 850px;
   }
 </style>
